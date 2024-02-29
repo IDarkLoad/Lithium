@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import calendar from '../public/calendar.jpg';
 import Menu from '../components/Menu';
+import React from 'react';
 
 export default function Calendario() {
     return (
@@ -9,8 +10,6 @@ export default function Calendario() {
                 <div className="absolute inset-0 overflow-hidden">
                     <Image
                         priority
-                        objectFit="cover"
-                        layout="fill"
                         src={calendar}
                         placeholder="blur"
                         alt="banner-calendar"

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Act from '../public/Action.jpeg';
 import Menu from '../components/Menu';
+import React from 'react';
 
 export default function Projetos() {
   return (
@@ -9,8 +10,6 @@ export default function Projetos() {
         <div className="absolute inset-0 overflow-hidden">
           <Image
             priority
-            objectFit="cover"
-            layout="fill"
             src={Act}
             placeholder="blur"
             alt="igreja"

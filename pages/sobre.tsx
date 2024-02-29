@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import igreja from '../public/hist.jpg';
 import Menu from '../components/Menu';
+import React from 'react';
 
 export default function Sobre() {
     return (
@@ -9,8 +10,6 @@ export default function Sobre() {
                 <div className="absolute inset-0 overflow-hidden">
                     <Image
                         priority
-                        objectFit="cover"
-                        layout="fill"
                         src={igreja}
                         placeholder="blur"
                         alt="igreja"

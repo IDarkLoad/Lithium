@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import img from '../public/4.png';
 import Menu from '../components/Menu';
+import React from 'react';
 
 export default function Gallery() {
   const options = ['Softwares', 'Website', 'Aplicativos'];
@@ -21,8 +22,6 @@ export default function Gallery() {
         <div className="absolute inset-0 overflow-hidden">
           <Image
             priority
-            objectFit="cover"
-            layout="fill"
             src={img}
             placeholder="blur"
             alt="Banner"

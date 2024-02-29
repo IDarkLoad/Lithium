@@ -1,14 +1,16 @@
-import '../styles/globals.css'
-import Footer from '../components/Footer'
-import Head from 'next/head'
-import { Montserrat } from 'next/font/google'
+// pages/_app.js
+import '../styles/globals.css';
+import Footer from '../components/Footer';
+import { Montserrat } from 'next/font/google';
+import React from 'react';
+import { Head } from 'next/document';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
-})
+});
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -19,5 +21,7 @@ export default function MyApp({ Component, pageProps }) {
         <Footer />
       </main>
     </>
-  )
+  );
 }
+
+export default MyApp;
